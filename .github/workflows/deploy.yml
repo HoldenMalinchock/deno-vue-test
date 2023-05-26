@@ -27,5 +27,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "deno-vue-kv-test"
-          entrypoint: "main.ts" # 📝 Update the entrypoint
-          root: "."
+          entrypoint: https://deno.land/std/http/file_server.ts
+          root: dist
